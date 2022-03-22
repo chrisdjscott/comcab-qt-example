@@ -3,9 +3,9 @@ import sys
 
 from PySide6 import QtWidgets
 import vtk
-import vtk.qt
-vtk.qt.PyQtImpl = "PySide6"
-from vtk.qt.QVTKRenderWindowInteractor import QVTKRenderWindowInteractor
+import vtkmodules.qt
+vtkmodules.qt.PyQtImpl = "PySide6"
+from vtkmodules.qt.QVTKRenderWindowInteractor import QVTKRenderWindowInteractor
 from matplotlib.backends.backend_qtagg import (
     FigureCanvas, NavigationToolbar2QT as NavigationToolbar)
 from matplotlib.figure import Figure
